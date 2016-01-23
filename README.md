@@ -1,5 +1,7 @@
 # we-theme-cluster a we.js theme
 
+> We.js cluster theme based in: http://readytheme.net/demo/cluster/
+
 ## How to develop:
 
 ### install for development:

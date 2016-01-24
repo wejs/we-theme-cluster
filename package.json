@@ -1,11 +1,11 @@
 {
   "name": "we-theme-cluster",
   "version": "0.0.1",
-  "description": "We.js we-theme-cluster theme",
+  "description": "We.js cluster theme from http://readytheme.net",
   "homepage": "https://yourthemehomepage.here",
   "repository": {
     "type": "git",
-    "url": "putyourthemerepositoryhere"
+    "url": "git@github.com:wejs/we-theme-cluster.git"
   },
   "main": "theme.js",
   "scripts": {
@@ -25,5 +25,6 @@
   "optionalDependencies": {},
   "engines": {
     "node": "*"
-  }
+  },
+  "author": "Alberto Souza <alberto.souza.dev@gmail.com>"
 }

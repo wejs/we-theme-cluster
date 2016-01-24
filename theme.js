@@ -58,6 +58,20 @@ module.exports = {
           name: 'After content'
         }
       }
+    },
+    'wejsdoc': {
+      template: __dirname + '/templates/server/layouts/wejsdoc.hbs',
+      regions: {
+        highlighted: {
+          name: 'Highlighted'
+        },
+        afterContent: {
+          name: 'After content'
+        },
+        sidebar: {
+          name: 'Sidebar'
+        }
+      }
     }
   },
   widgets: {}

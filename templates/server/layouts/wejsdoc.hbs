@@ -1,0 +1,17 @@
+<div class="container"><div class="row">
+  {{#region 'highlighted' class="col col-md-12"}}{{/region}}
+
+  {{#region 'sidebar' class="col col-md-4"}}{{/region}}
+  <div  id="content" role="main" class="col col-md-8" style="min-height:450px">
+    <div id="sysMessagesArea">{{{we-messages}}}</div>
+
+    {{{body}}}
+
+    {{#region 'afterContent'}}{{/region}}
+  </div>
+  <div class="col col-md-12">
+    <hr>
+    <p class="small">Is something missing?<br>
+      If you notice something we've missed or could be improved on, please follow <a href="https://github.com/wejs/docs/tree/master/docs">this link</a> and submit a pull request to the <strong>wejs/docs</strong> repo.</p>
+  </div>
+</div></div>

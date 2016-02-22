@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{locale}}">
 <head>
-  <title>{{title}} {{req.we.config.appName}}</title>
-
+  <title>{{title}} | {{req.we.config.appName}}</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
   {{#if _csrf}}<meta name="csrf-token" content="{{_csrf}}" />{{/if}}
-
   {{{render-metadata-tags}}}
   {{{render-stylesheet-tags}}}
   {{{render-javascript-tags 'header'}}}

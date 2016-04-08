@@ -5,11 +5,11 @@
   <div  id="content" role="main" class="col col-md-8" style="min-height:450px">
     <div id="sysMessagesArea">{{{we-messages}}}</div>
 
-    {{{body}}}
+    <div id="content" role="main">{{{body}}}</div>
 
     {{#region 'afterContent'}}{{/region}}
   </div>
-  <div class="col col-md-12">
+  <div class="col col-md-12" role="contentinfo">
     <hr>
     <p class="small">Is something missing?<br>
       If you notice something we've missed or could be improved on, please follow <a href="https://github.com/wejs/docs/tree/master/docs">this link</a> and submit a pull request to the <strong>wejs/docs</strong> repo.</p>

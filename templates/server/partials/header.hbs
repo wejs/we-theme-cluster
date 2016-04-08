@@ -6,7 +6,6 @@
 </div>
 <!-- /PRELOADER --> --}}
 <a id="skippy" class="sr-only-focusable " href="#content">{{t 'skip.to.content.link.text'}}</a>
-<!-- HEADER -->
 <header id="header">
   <nav class="navbar st-navbar">
     <div class="container">
@@ -21,11 +20,10 @@
         {{#link-to 'main.index' class="logo"}}<img width="50" src="{{req.we.config.appLogo}}" alt="{{appName}}">{{/link-to}}
       </div>
 
-      <div class="collapse navbar-collapse" id="st-navbar-collapse">
+      <div class="collapse navbar-collapse" id="st-navbar-collapse" role="navigation">
         {{we-menu req.we.menu.main class="nav navbar-nav navbar-right"}}
         {{we-menu userMenu  class="nav navbar-nav navbar-right"}}
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
+      </div>
+    </div>
   </nav>
 </header>
-<!-- /HEADER -->

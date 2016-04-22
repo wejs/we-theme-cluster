@@ -27,7 +27,8 @@ gulp.task('watch', function () {
 });
 
 gulp.task('server', function() {
-  var we = require('we-core');
+  var We = require('we-core');
+  var we = new We();
 
   we.go({
     themes: {

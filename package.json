@@ -2,31 +2,22 @@
   "name": "we-theme-cluster",
   "version": "1.0.11",
   "description": "We.js cluster theme from http://readytheme.net",
-  "homepage": "https://yourthemehomepage.here",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:wejs/we-theme-cluster.git"
-  },
+  "homepage": "https://github.com/wejs/we-theme-cluster",
+  "repository": "wejs/we-theme-cluster",
   "main": "theme.js",
   "scripts": {
     "start": "gulp server"
   },
   "dependencies": {},
   "devDependencies": {
-    "express-mysql-session": "^1.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-less": "^3.0.5",
-    "gulp-minify-css": "^1.2.4",
-    "mysql": "^2.10.2",
-    "we-core": "^1.2",
-    "we-plugin-bootstrap3": "^0.3.2",
-    "we-plugin-form": "^0.3.33",
-    "we-plugin-menu": "^1.1.1"
+    "gulp-minify-css": "^1.2.4"
   },
   "optionalDependencies": {},
   "engines": {
     "node": "*"
   },
-  "author": "Alberto Souza <alberto.souza.dev@gmail.com>"
+  "author": "Alberto Souza <contato@albertosouza.net>"
 }

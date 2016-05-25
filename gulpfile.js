@@ -4,7 +4,6 @@ var concat = require('gulp-concat');
 var less = require('gulp-less');
 var minifyCSS = require('gulp-minify-css');
 
-
 gulp.task('scripts', function() {
   return gulp.src(['src/js/**/*.js'])
     .pipe(concat('script.js'))
@@ -26,35 +25,5 @@ gulp.task('watch', function () {
   gulp.watch('src/less/**', ['styles']);
 });
 
-gulp.task('server', function() {
-  var We = require('we-core');
-  var we = new We();
-
-  we.go({
-    themes: {
-      enabled: [
-        { name: 'we-theme-cluster', themeFolder: __dirname }
-      ],
-      app: 'we-theme-cluster'
-    },
-    i18n: {
-      directory: 'node_modules/we-core/locales'
-    },
-    log: {
-      level: 'info'
-    }
-  }, function (err, we) {
-    if (err) return console.error(err);
-  });
-
-  we.hooks.on('we:before:routes:bind',  function (we, next) {
-    // set home page example route
-    we.routes['get /'].template = 'template-examples/index';
-    delete we.routes['get /'].pluginName;
-
-    next();
-  });
-});
-
 gulp.task('process', ['scripts', 'styles', 'watch']);
-gulp.task('default', ['scripts', 'styles', 'watch', 'server']);
+gulp.task('default', ['scripts', 'styles', 'watch']);
